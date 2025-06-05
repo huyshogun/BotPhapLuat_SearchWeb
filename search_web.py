@@ -13,7 +13,7 @@ import requests
 
 # Thiết lập biến môi trường
 api_key = st.secrets["api_key_google"]
-google_cse_id = st.secrets["google_csd_id"]
+google_cse_id = st.secrets["google_cse_id"]
 
 # 3) Định nghĩa Tool tìm kiếm Google Custom Search
 class GoogleSearchInput(BaseModel):
