@@ -5,7 +5,6 @@ import streamlit as st
 import pickle
 import google.generativeai as genai
 import os
-import pdfplumber
 import re
 import openai
 from docx import Document
