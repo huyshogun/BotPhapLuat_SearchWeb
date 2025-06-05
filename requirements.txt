@@ -1,0 +1,14 @@
+numpy
+pandas
+pdfplumber
+streamlit
+google-generativeai
+networkx
+openai
+python-docx
+python-dotenv
+pydantic
+googleapiclient-discovery
+crewai
+readability-lxml
+json
