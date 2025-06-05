@@ -278,7 +278,7 @@ def extract_database(relevant_passge, user_question):
            doc_path = f"Corpus/{extract_law}.docx"
            doc = Document(doc_path)
            lines = [para.text for para in doc.paragraphs if para.text.strip()]
-           Diem += law_list[i] + ":\n"
+           Diem += law_list[j] + ":\n"
            for line in lines:
               Diem += line + "\n"
     return Diem
