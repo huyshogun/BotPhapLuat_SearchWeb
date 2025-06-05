@@ -13,7 +13,7 @@ import requests
 
 # Thiết lập biến môi trường
 api_key = st.secrets["api_key_google"]
-os.environ['GOOGLE_CSE_ID'] = 'f1806c5a89c8d4e08'
+google_cse_id = st.secrets["google_csd_id"]
 
 # 3) Định nghĩa Tool tìm kiếm Google Custom Search
 class GoogleSearchInput(BaseModel):
@@ -54,7 +54,7 @@ class GoogleSearchTool(BaseTool):
 # Pass cse_id as an argument to the constructor, Pydantic will set it.
 # Initialize the service attribute after creating the instance.
 google_search = GoogleSearchTool(
-    cse_id=os.getenv('GOOGLE_CSE_ID') # Pass cse_id here
+    cse_id=google_cse_id # Pass cse_id here
 )
 # Initialize the service attribute after instantiation
 google_search.service = build('customsearch', 'v1', developerKey=api_key)
