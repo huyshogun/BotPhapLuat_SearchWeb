@@ -43,8 +43,8 @@ def question_identification(client: openai.OpenAI, question: str) -> str:
             {"role": "user", "content": question}
         ],
         temperature=0.0,
-        max_tokens=2048,
-        top_p=0.9,
+        max_tokens=512,
+        top_p=0.0,
         # frequency_penalty=1.0, # These parameters might not be supported by all models/providers
         # presence_penalty=0.0   # Check OpenRouter documentation for supported parameters
     )
@@ -65,7 +65,7 @@ def extract_article(client: openai.OpenAI, question: str) -> str:
         ],
         temperature=0.0,
         max_tokens=2048,
-        top_p=0.9,
+        top_p=0.7,
         # frequency_penalty=1.0, # These parameters might not be supported by all models/providers
         # presence_penalty=0.0   # Check OpenRouter documentation for supported parameters
     )
