@@ -272,8 +272,8 @@ def extract_database(relevant_passge, user_question):
                    for m in list(G.neighbors(k)):
                       Diem += "Điểm " + m[3:] + ": " + G.nodes[m]['content'] + ".\n"
         else:
-           j = int(i)-1
-           law = law_list[i][9:]
+           j = int(i)-2
+           law = law_list[j][9:]
            extract_law = law.replace("_", "/")
            doc_path = f"Corpus/{extract_law}.docx"
            doc = Document(doc_path)
