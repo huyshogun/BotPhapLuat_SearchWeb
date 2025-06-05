@@ -1,4 +1,3 @@
---upgrade pip
 numpy
 pandas
 pdfplumber
@@ -9,7 +8,7 @@ openai
 python-docx
 python-dotenv
 pydantic
-googleapiclient-discovery
+google-api-python-client
 crewai
 readability-lxml
-json
+
