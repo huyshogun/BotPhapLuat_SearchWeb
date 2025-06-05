@@ -274,7 +274,7 @@ def extract_database(relevant_passge, user_question):
         else:
            j = int(i)-2
            law = law_list[j][9:]
-           extract_law = law.replace("_", "/")
+           extract_law = law.replace("/", "_")
            doc_path = f"Corpus/{extract_law}.docx"
            doc = Document(doc_path)
            lines = [para.text for para in doc.paragraphs if para.text.strip()]
